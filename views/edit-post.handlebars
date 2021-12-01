@@ -1,0 +1,38 @@
+<section>
+     <a href="/dashboard"> &larr; Back to dashboard</a>
+     <h2>Edit Post</h2>
+
+     <form action="" class="edit-post-form">
+         <div>
+             <label class="label">Title</label>
+             <textarea class="input" placeholder="Title" id="edit-post-title"></textarea>
+         </div>
+         <div>
+             <label class="label post-content">Content</label>
+             <textarea class="textarea" placeholder="Hello world" id="post-content"></textarea>
+         </div>
+         <div>
+       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+     </div>
+         <button class="button is-primary is-outlined submit">Update Post</button>
+         <button class="button is-danger is-outlined" id="delete-post" >Delete Post</button>
+
+     </form>
+</section>
+
+<form action="" class="comment-form">
+     <div>
+         <textarea class="textarea" placeholder="Hello world" id="comment-body" ></textarea>
+     </div>
+
+     <div>
+         <button class="button is-primary is-outlined submit">Add comment</button>
+     </div>
+</form>
+
+
+
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
