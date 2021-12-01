@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS dollop_db;
+CREATE DATABASE dollop_db;
