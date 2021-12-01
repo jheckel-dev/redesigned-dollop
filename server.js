@@ -1,9 +1,11 @@
-const express = require('express');
+const express = require ('express');
 const { Sequelize, Model, DataTypes } = require('sequelize');
-const sequelize = require('./config/connection');
-const routes = require('./controllers/api');
-const path = require('path');
-const session = require('express-session');
+const sequelize = require ('./config/connection');
+const routes = require ('./controllers');
+const helpers = require('./utils/helpers');
+const path = require ('path');
+const session = require ('express-session');
+
 const SequelizeStore = require('connect-session-sequelize') (session.Store);
 
 const sess = {
