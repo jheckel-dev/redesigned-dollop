@@ -23,6 +23,9 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2",
     "connect-session-sequelize": "^7.1.2",
-    "express-session": "^1.17.2"
+    "express-session": "^1.17.2",
+    "bulma":"^0.9.3",
+    "express-handlebars":"^6.0.2",
+    "handlebars":"^4.7.7"
   }
 }
