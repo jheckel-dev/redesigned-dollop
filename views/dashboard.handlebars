@@ -1,0 +1,32 @@
+<section>
+     <h2>Create New Post</h2>
+
+     <form action="" class="new-post-form">
+         <div>
+             <label class="label post-title">Title</label>
+             <textarea class="input" placeholder="Title" id="post-title"></textarea>
+         </div>
+         <div>
+             <label class="label post-content">Content</label>
+             <textarea class="textarea" placeholder="Hello world" id="post-content"></textarea>
+         </div>
+         <button class="button is-primary is-outlined">Post</button>
+     </form>
+ </section>
+
+ {{#if post.length}}
+ <section>
+     <h2>Your Posts</h2>
+     <ol>
+         {{#each posts as |post|}}
+         <li>
+             {{> post-info post}}
+             <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+         </li>
+         {{/each}}
+     </ol>
+ </section>
+ {{/if}}
+
+
+ <script src="/javascript/new-post.js"></script>
